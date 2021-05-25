@@ -1,5 +1,5 @@
 <template>
-  <div>homeaa</div>
+  <div>自动化部署完成？？？</div>
 </template>
 
 <script lang="ts">
