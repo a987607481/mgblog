@@ -1,22 +1,15 @@
 <template>
-  <router-view></router-view>
+  <div>
+    <Header />
+    <router-view></router-view>
+    <Footer />
+  </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'App'
-})
+import Header from './common/header.vue'
+import Footer from './common/footer.vue'
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>
