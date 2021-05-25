@@ -15,5 +15,21 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: ['vue', '@typescript-eslint'],
-  rules: {}
+  rules: {
+    'import/extensions': [
+      'error',
+      'always',
+      {
+        ts: 'never',
+        vue: 'never'
+      }
+    ]
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx']
+      }
+    }
+  }
 }
